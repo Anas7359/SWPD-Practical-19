@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter Your Number Here!"));
+        let power = parseInt(prompt("Enter Power"));
+
+        var result=num;
+        if(power==1){
+            result=num;
+        }
+        else if(power==2){
+            result = num * num;
+        }
+        else if(power>=3){
+
+            for(let i=1 ; i<=power; i++){
+            result = result * num;
+            }    
+        }
+        document.write("Your Answer is: "+result);
+    </script>
+    
+</body>
+</html>
